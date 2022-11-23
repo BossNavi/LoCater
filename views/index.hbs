@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoCater</title>
+
+    {{!-- fav-icon  --}}
+    <link rel="shortcut icon" href="/img/icon-logo.png" type="image/x-icon">
+        <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/10ae6ae326.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+ 
+
+    {{!-- header --}}
+    <section class="header">
+        <a href="#" class="logo"> <i class="fas fa-utensils"></i> LoCater</a>
+
+
+        <div class="icons">
+            <div class="fa-solid fa-message" id="message-btn">
+                <span>0</span>
+            </div>
+            <div class="fa-solid fa-bell" id="notif-btn">
+                <span>0</span>
+            </div>
+            <div class="fa-solid fa-user" id="login-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#developer">Developer</a>
+            <a href="#caterers">Caterers</a>
+        </nav>
+
+        <div class="login-form">
+            <form action="" method="" id="signin" class="form">
+                <div class="form-title">
+                    <h1>Sign In</h1>
+                </div>
+                <div class="form-message"><span>Failed to Login</span></div>
+                <div class="input-group">
+                    <input type="text" name="username" placeholder="Enter Username /E-mail" id="signin-username" autofocus> 
+                    
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Enter Password" id="signin-password"> 
+                </div>
+
+                <input type="submit" id="signin-submit" class="btn btn-login" value="sign in">
+                <center>
+                <p>Don't have an account? <a href="#" id="signup-btn"> Sign up</a></p>
+                </center>
+                
+            </form>
+
+            <form action="" method="" id="signup" class="form hide">
+                <div class="form-title">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="form-message"></div>
+                <div class="input-group">
+                    <input type="text" name="username" placeholder="Enter Username" id="signup-username" autofocus> 
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Enter Email" id="signup-email" autofocus> 
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Enter Password" id="signup-password"> 
+                </div>
+                <div class="input-group">
+                    <input type="password" name="confirm-password" placeholder="Confirm Password" id="signup-confirm-password"> 
+                </div>
+
+                <input type="submit" class="btn btn-login" id="signup-submit" value="sign up">
+                <center>
+                <p>Already have an account?<span id="signin-btn"> Sign in</span></p>
+                </center>
+            </form>
+        </div>
+
+        <div class="notif" >
+            <h2>Notification</h2>
+            <div class="notif-body" id="notif">
+                <div class="notif-content">
+                    <img src="/img/book-online.gif" alt="">
+                    <div class="info">
+                        <h5>James Dan</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        <span>Jan 4 2021</span>
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+        <div class="chat" >
+            <div class="inbox">
+                <h2>Inbox</h2>
+                <div class="chat-body" id="chat">
+                    <div class="chat-content" id="user-id">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                    <div class="chat-content">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                    <div class="chat-content">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                    <div class="chat-content">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                    <div class="chat-content">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                    <div class="chat-content">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                    <div class="chat-content">
+                        <div class="left">
+                            <img src="/img/avatar.png" alt="">
+                            <span>
+                                9
+                            </span>
+                        </div>
+                        <div class="right">
+                            <h4>James Dan</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <span>Jan 4 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="convo hide" id="convo">
+                <div class="convo-head">
+                    <h2>Chat Box</h2>
+                    <i class="fa-sharp fa-solid fa-xmark" id="back-inbox"></i>
+                </div>
+                <span>James Dan</span>
+                <div class="chat-box" id="chat">
+                    <div class="from">
+                        <img src="/img/avatar.png" alt="">
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit amet.lorem lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur natus neque, quos a quod dolore unde velit </p>
+                            <span>Jan 25 2000 10:20 PM</span>
+                        </div>
+                    </div>
+                    <div class="to">
+                        <div class="msg">
+                            <p>Lorem ipsum dolor sit amet.lorem lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur natus neque, quos a quod dolore unde velit </p>
+                            <span>Jan 25 2000 10:20 PM</span>
+                        </div>
+                        <img src="/img/icon-logo.png" alt="">
+                    </div>
+                    <div class="to">
+                        <div class="msg">
+                            <img src="/img/book-online.gif" alt="">
+                            <span>Jan 25 2000 10:20 PM</span>
+                        </div>
+                        <img src="/img/icon-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="msg-box">
+                    <textarea name="" rows="3" placeholder="message here" ></textarea>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-solid fa-image"></i>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    
+    {{!-- Home Section --}}
+    <section class="home" id="home">
+
+        <div class="image" data-aos="fade-down">
+            <img src="/img/calendar.gif" alt="">
+        </div>
+
+        <div class="content" data-aos="fade-up">
+            <h3>Online Catering Reservation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo eius inventore reprehenderit alias eos facilis, ipsa est asperiores repellendus!</p>
+        </div>
+
+    </section>
+
+    {{!-- book Section --}}
+    <section class="form-container" data-aos="zoom-in">
+
+        <form action="">
+
+            <div class="inputBox">
+                <span>where</span>
+                <input type="text" placeholder="search places">
+            </div>
+
+            <div class="inputBox">
+                <span>When</span>
+                <input type="date">
+            </div>
+
+            <div class="inputBox">
+                <span>Time</span>
+                <input type="time">
+            </div>
+
+            <input type="submit" value="book now" class="btn">
+
+        </form>
+
+    </section>
+
+    {{!-- Packages Section  --}}
+    <section class="packages" id="packages">
+
+        <h1 class="heading"> Catering <span>Packages</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <div class="image">
+                    <img src="img/book-online.gif" alt="">
+                    <h3>Burger </h3>
+                </div>
+                <div class="content">
+                    <div class="price"> 290.99 <span>350.99</span> </div>
+                    <p>Lorem, ipsum dolor sit ipsum dolor sit amet... </p>
+                    <div class="package-order-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="hide">
+                            Order Now
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="package-btn">
+            <a href="#" class="btn">see more</a>
+        </div>
+
+    </section>
+
+
+    {{!-- Packages Section  --}}
+    <section class="packages" id="caterer">
+
+        <h1 class="heading"> Caterers </h1>
+
+        <div class="box-container">
+
+        </div>
+        <div class="package-btn">
+            <a href="#" class="btn">see more</a>
+        </div>
+
+    </section>
+
+    <footer>
+       
+        <h1>Lo<span>Cater</span> </h1>
+        <p>Copyright &copy 2022, made by <span>Ivan Chris Cano</span>.</p>
+        
+    </footer>
+
+    <script src="/style.js"></script>
+    <script src="/home.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
